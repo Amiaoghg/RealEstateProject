@@ -9,7 +9,7 @@ from streamlit_option_menu import option_menu
 import geopandas as gpd
 import plotly.io as pio
 pio.renderers.default='browser'
-mypath = "C:/Users/amiao/Desktop/Case Study/"
+mypath = ""
 counta = gpd.read_file(mypath + "geojson-counties-fips.json")  
 counta = counta.rename(columns={'COUNTY':"countyfips", "STATE":"state_fips"})
 gdf = gpd.read_file(mypath + "data.geojson")
